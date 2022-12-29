@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Roboto-Black';
+    font-style: normal;
+    src: local('Roboto-Black'), url(@/assets/styles/fonts/Roboto/Roboto-Black.ttf) format('truetype');
+
+  }
+  @font-face {
+    font-family: 'Roboto-Bold';
+    font-style: normal;
+    src: local('Roboto-Bold'), url(@/assets/styles/fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+  }
