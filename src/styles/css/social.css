@@ -221,7 +221,7 @@ select:active {
 .sidebar::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #555;
+  background-color: rgb(194, 192, 192);
 }
 .sidebar .action-btn-wrp {
   padding-top: 30px;
@@ -270,8 +270,79 @@ select:active {
 
 .feeds {
   flex: 5.5;
+  padding: 1.875rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .rightbar {
   flex: 3.5;
+}
+
+.user-entry-card {
+  padding: 12px 12px 20px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.75);
+}
+.user-entry-card .entry {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.user-entry-card .entry img {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.user-entry-card .entry input {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+}
+.user-entry-card .entry input::-moz-placeholder {
+  font-size: 18px;
+  color: rgb(163, 157, 157);
+}
+.user-entry-card .entry input:-ms-input-placeholder {
+  font-size: 18px;
+  color: rgb(163, 157, 157);
+}
+.user-entry-card .entry input::placeholder {
+  font-size: 18px;
+  color: rgb(163, 157, 157);
+}
+.user-entry-card .card-actions {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-entry-card .card-actions .card-action-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.user-entry-card .card-actions .card-action-items .card-action-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.user-entry-card .card-actions .card-action-items .card-action-item span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.user-entry-card .card-actions button {
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  background-color: green;
+  border-radius: 4px;
 }/*# sourceMappingURL=social.css.map */
