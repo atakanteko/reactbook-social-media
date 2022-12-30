@@ -93,6 +93,7 @@ select:active {
   padding-inline: 1.25rem;
   margin-top: 4.375rem;
   display: flex;
+  width: 100%;
 }
 
 .topbar-container {
@@ -203,8 +204,8 @@ select:active {
 
 .sidebar {
   height: calc(100vh - 70px);
-  width: 25rem;
   overflow-y: scroll;
+  flex: 3;
 }
 .sidebar .action-btn-wrp {
   padding-top: 30px;
@@ -224,4 +225,12 @@ select:active {
 .sidebar .action-btn-wrp .action-button .action-button-text {
   font-size: 21px;
   font-weight: 300;
+}
+
+.feeds {
+  flex: 5.5;
+}
+
+.rightbar {
+  flex: 3.5;
 }/*# sourceMappingURL=social.css.map */

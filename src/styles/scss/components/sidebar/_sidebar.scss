@@ -2,8 +2,8 @@
 
 .sidebar{
     height: calc(100vh - 70px);
-    width: toRem(400);
     overflow-y: scroll;
+    flex: 3;
     .action-btn-wrp{
         @include actionsButton.actionButton;
         padding-top: 30px;

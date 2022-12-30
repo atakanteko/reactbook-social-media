@@ -1,5 +1,6 @@
 import Container from '@/components/Container'
 import Feeds from '@/components/feeds/Feeds'
+import Rightbar from '@/components/rightbar/Rightbar'
 import Sidebar from '@/components/sidebar/Sidebar'
 import Topbar from '@/components/topbar/Topbar'
 
@@ -12,6 +13,7 @@ const Home = (props: Props) => {
         <Container>
           <Sidebar />
           <Feeds />
+          <Rightbar />
         </Container>
     </div>
   )
