@@ -4,6 +4,8 @@
     height: calc(100vh - 70px);
     overflow-y: scroll;
     flex: 3;
+    position: sticky;
+    top: 70px;
     .action-btn-wrp{
         @include actionsButton.actionButton;
         padding-top: 30px;
