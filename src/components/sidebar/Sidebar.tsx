@@ -18,6 +18,17 @@ const Sidebar = (props: Props) => {
                     ))
                 }
             </div>
+            <div className="action-btn-wrp">
+                {
+                    sideBarActionsModel.map(item => (
+                        <ActionButton
+                            key={item.id}
+                            materialIcon={item.icon} 
+                            text={item.text} 
+                        />
+                    ))
+                }
+            </div>
             
         </div>
     )
