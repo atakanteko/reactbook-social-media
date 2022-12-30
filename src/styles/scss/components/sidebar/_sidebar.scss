@@ -28,6 +28,7 @@
     .action-btn-wrp{
         @include actionsButton.actionButton;
         padding-top: 30px;
+        padding-bottom: 30px;
         display: flex;
         flex-direction: column;
         gap: 20px;

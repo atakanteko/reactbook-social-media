@@ -225,6 +225,7 @@ select:active {
 }
 .sidebar .action-btn-wrp {
   padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
