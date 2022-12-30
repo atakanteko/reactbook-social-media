@@ -243,6 +243,30 @@ select:active {
   font-size: 18px;
   font-weight: 300;
 }
+.sidebar .action-people-wrp {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar .action-people-wrp .action-people {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sidebar .action-people-wrp .action-people img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.sidebar .action-people-wrp .action-people .action-people-text {
+  font-size: 18px;
+  font-weight: 300;
+}
 
 .feeds {
   flex: 5.5;

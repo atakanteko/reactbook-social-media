@@ -1,7 +1,9 @@
 import React from 'react'
 import ActionButton from './actions/ActionButton'
 import { sideBarActionsModel } from '@/assets/model/sidebarAction'
+import { sidebarPeopleModel } from '@/assets/model/sidebarPeople'
 import Divider from '../Divider'
+import ActionPeople from './actions/ActionPeople'
 
 type Props = {}
 
@@ -19,7 +21,18 @@ const Sidebar = (props: Props) => {
                     ))
                 }
             </div> 
-            <Divider />   
+            <Divider /> 
+            <div className="action-people-wrp">
+                {
+                    sidebarPeopleModel.map(item => (
+                        <ActionPeople
+                            key={item.id}
+                            img={item.img} 
+                            name={item.name} 
+                        />
+                    ))
+                }
+            </div>  
         </div>
     )
 }
