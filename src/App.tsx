@@ -1,10 +1,13 @@
 import React from 'react'
+import Home from './pages/home/Home';
 
 type Props = {}
 
 const App = (props: Props) => {
   return (
-    <div>App</div>
+    <main>
+      <Home />
+    </main>
   )
 }
 
