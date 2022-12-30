@@ -1,0 +1,15 @@
+@mixin actionButton {
+    .action-button{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 20px;        
+        .btn-icon{
+            font-size: 32px !important;
+        }
+        .action-button-text{
+            font-size: 21px;
+            font-weight: 300;
+        }
+    }
+  }

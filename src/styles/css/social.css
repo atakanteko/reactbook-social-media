@@ -89,6 +89,12 @@ select:active {
   font-style: normal;
   src: local("Roboto-Bold"), url(@/assets/styles/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
 }
+.social-container .container-wrapper {
+  padding-inline: 1.25rem;
+  margin-top: 4.375rem;
+  display: flex;
+}
+
 .topbar-container {
   background-color: #1877F2;
   width: 100%;
@@ -193,4 +199,29 @@ select:active {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+.sidebar {
+  height: calc(100vh - 70px);
+  width: 25rem;
+  overflow-y: scroll;
+}
+.sidebar .action-btn-wrp {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar .action-btn-wrp .action-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sidebar .action-btn-wrp .action-button .btn-icon {
+  font-size: 32px !important;
+}
+.sidebar .action-btn-wrp .action-button .action-button-text {
+  font-size: 21px;
+  font-weight: 300;
 }/*# sourceMappingURL=social.css.map */

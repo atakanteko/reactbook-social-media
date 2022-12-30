@@ -1,0 +1,14 @@
+@use "actionsButton";
+
+.sidebar{
+    height: calc(100vh - 70px);
+    width: toRem(400);
+    overflow-y: scroll;
+    .action-btn-wrp{
+        @include actionsButton.actionButton;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
