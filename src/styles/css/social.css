@@ -273,6 +273,7 @@ select:active {
   padding: 1.875rem;
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .rightbar {
@@ -344,4 +345,76 @@ select:active {
   color: white;
   background-color: green;
   border-radius: 4px;
+}
+
+.post {
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.75);
+}
+.post .post-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.post .post-wrapper .post-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post .post-wrapper .post-top .post-top-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post .post-wrapper .post-top .post-top-wrapper img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.post .post-wrapper .post-top .post-top-wrapper .post-time {
+  font-size: 14px;
+  font-weight: 300;
+}
+.post .post-wrapper .post-center {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.post .post-wrapper .post-center p {
+  width: 100%;
+  font-weight: 300;
+}
+.post .post-wrapper .post-center img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post .post-wrapper .post-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.post .post-wrapper .post-bottom .post-bottom-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.post .post-wrapper .post-bottom .post-bottom-wrapper img {
+  width: 28px;
+  height: 28px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post .post-wrapper .post-bottom .post-bottom-wrapper span {
+  font-size: 16px;
+  font-weight: 300;
+}
+.post .post-wrapper .post-bottom span {
+  font-size: 16px;
+  font-weight: 300;
 }/*# sourceMappingURL=social.css.map */
