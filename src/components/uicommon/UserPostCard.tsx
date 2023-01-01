@@ -5,9 +5,12 @@ import Like from '@/assets/images/like.png';
 
 import { MoreVert } from  '@material-ui/icons';
 
-type Props = {}
+type Props = {
+    text: string,
+    img: string
+}
 
-const UserPostCard = (props: Props) => {
+const UserPostCard = ({ text, img }: Props) => {
   return (
     <div className='post'>
         <div className="post-wrapper">
@@ -23,9 +26,9 @@ const UserPostCard = (props: Props) => {
                 <MoreVert />
             </div>
             <div className="post-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.</p>
+                <p>{text}</p>
                 <img 
-                    src={PostPicture} 
+                    src={img} 
                     alt="post image" 
                 />
             </div>
