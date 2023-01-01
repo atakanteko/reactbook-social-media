@@ -27,19 +27,19 @@ const UserEntryCard = (props: Props) => {
         <div className="card-actions">
             <div className="card-action-items">
                 <div className='card-action-item'>
-                    <PhotoLibrary style={{color:"red"}}/>
+                    <PhotoLibrary htmlColor="tomato"/>
                     <span>Photo or Video</span>
                 </div>
                 <div className='card-action-item'>
-                    <AlternateEmail style={{color:"blue"}}/>
+                    <AlternateEmail htmlColor="blue"/>
                     <span>Tag</span>
                 </div>
                 <div className='card-action-item'>
-                    <LocationOn style={{color:"green"}}/>
+                    <LocationOn htmlColor="green"/>
                     <span>Location</span>
                 </div>
                 <div className='card-action-item'>
-                    <AlternateEmail style={{color:"pink"}}/>
+                    <Mood htmlColor="goldenrod"/>
                     <span>Feelings</span>
                 </div>
             </div>
