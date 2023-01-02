@@ -609,4 +609,44 @@ select:active {
 }
 .profile .profileRight .profileRightBottom {
   display: flex;
+}
+
+.rightbarTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.rightbarInfo {
+  margin-bottom: 30px;
+}
+.rightbarInfo .rightbarInfoItem {
+  margin-bottom: 10px;
+}
+.rightbarInfo .rightbarInfoItem .rightbarInfoKey {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+.rightbarInfo .rightbarInfoItem .rightbarInfoValue {
+  font-weight: 300;
+}
+
+.rightbarFollowings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rightbarFollowings .rightbarFollowing {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.rightbarFollowings .rightbarFollowing .rightbarFollowingImg {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }/*# sourceMappingURL=social.css.map */
