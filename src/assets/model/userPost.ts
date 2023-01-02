@@ -11,53 +11,87 @@ import PostPicture10 from '@/assets/images/post/10.jpeg';
 
 export const userPostModel = [
     {
-        id: 0,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture1
+      id: 1,
+      desc: "Love For All, Hatred For None.",
+      photo: PostPicture1,
+      date: "5 mins ago",
+      userId: 1,
+      like: 32,
+      comment: 9,
     },
     {
-        id: 1,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture2
+      id: 2,
+      photo: PostPicture2,
+      date: "15 mins ago",
+      userId: 2,
+      like: 2,
+      comment: 1,
     },
     {
-        id: 2,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture3
+      id: 3,
+      desc: "Every moment is a fresh beginning.",
+      photo: PostPicture3,
+      date: "1 hour ago",
+      userId: 3,
+      like: 61,
+      comment: 2,
     },
     {
-        id: 3,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture4
+      id: 4,
+      photo: PostPicture4,
+      date: "4 hours ago",
+      userId: 4,
+      like: 7,
+      comment: 3,
     },
     {
-        id: 4,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture5
+      id: 5,
+      photo: PostPicture5,
+      date: "5 hours ago",
+      userId: 5,
+      like: 23,
+      comment: 5,
     },
     {
-        id: 5,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture6
+      id: 6,
+      photo: PostPicture6,
+      date: "1 day ago",
+      userId: 6,
+      like: 44,
+      comment: 6,
     },
     {
-        id: 6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture7
+      id: 7,
+      desc: "Never regret anything that made you smile.",
+      photo: PostPicture7,
+      date: "2 days ago",
+      userId: 7,
+      like: 52,
+      comment: 3,
     },
     {
-        id: 7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture8
+      id: 8,
+      photo: PostPicture8,
+      date: "3 days ago",
+      userId: 8,
+      like: 15,
+      comment: 1,
     },
     {
-        id: 8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture9
+      id: 9,
+      desc: "Change the world by being yourself.",
+      photo: PostPicture9,
+      date: "5 days ago",
+      userId: 9,
+      like: 11,
+      comment: 2,
     },
     {
-        id: 9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, excepturi maiores in, iusto officiis minus odit quis architecto quam a tenetur sequi eos voluptatibus fugiat quos itaque! Laborum, similique.",
-        img: PostPicture10
+      id: 10,
+      photo: PostPicture10,
+      date: "1 week ago",
+      userId: 10,
+      like: 104,
+      comment: 12,
     },
-]
+  ];

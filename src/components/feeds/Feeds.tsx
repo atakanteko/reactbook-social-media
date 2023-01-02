@@ -13,8 +13,12 @@ const Feeds = (props: Props) => {
         userPostModel.map(post => (
           <UserPostCard
             key={post.id}
-            text={post.text}
-            img={post.img}  
+            text={post.desc}
+            img={post.photo}
+            comment={post.comment}
+            like={post.like}
+            date={post.date}
+            userId={post.userId}
           />
         ))
       }

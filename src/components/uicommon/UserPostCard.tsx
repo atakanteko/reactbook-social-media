@@ -1,27 +1,32 @@
-import ProfilePicture from '@/assets/images/person/1.jpeg';
-import PostPicture from '@/assets/images/post/1.jpeg';
 import Heart from '@/assets/images/heart.png';
 import Like from '@/assets/images/like.png';
-
 import { MoreVert } from  '@material-ui/icons';
+import { onlineUserModel } from '@/assets/model/onlineUser';
 
 type Props = {
-    text: string,
-    img: string
+    text?: string,
+    img: string,
+    date: string,
+    like: number,
+    comment: number,
+    userId: number
 }
 
-const UserPostCard = ({ text, img }: Props) => {
+const UserPostCard = ({ text, img, date, like, comment, userId }: Props) => {
+    
+  const getUserName = (id:number) => onlineUserModel.find(user => user.id === id)?.username
+  
   return (
     <div className='post'>
         <div className="post-wrapper">
             <div className="post-top">
                 <div className="post-top-wrapper">
                     <img 
-                        src={ProfilePicture} 
+                        src={img} 
                         alt="profile picture" 
                     />
-                    <span className="post-user-name">Atakan Teko</span>
-                    <span className="post-time">5 mins ago</span>
+                    <span className="post-user-name">{getUserName(userId)}</span>
+                    <span className="post-time">{date}</span>
                 </div>
                 <MoreVert />
             </div>
@@ -42,10 +47,10 @@ const UserPostCard = ({ text, img }: Props) => {
                         src={Heart}
                         alt="heart"
                     />
-                    <span>32 people like it</span>
+                    <span>{like} people like it</span>
                 </div>
                 <div>
-                    <span>9 comments</span>
+                    <span>{comment} comments</span>
                 </div>
             </div>
         </div>
