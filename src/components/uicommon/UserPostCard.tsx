@@ -2,6 +2,7 @@ import Heart from '@/assets/images/heart.png';
 import Like from '@/assets/images/like.png';
 import { MoreVert } from  '@material-ui/icons';
 import { onlineUserModel } from '@/assets/model/onlineUser';
+import { useState } from 'react';
 
 type Props = {
     text?: string,
@@ -13,8 +14,15 @@ type Props = {
 }
 
 const UserPostCard = ({ text, img, date, like, comment, userId }: Props) => {
-    
-  const getUserName = (id:number) => onlineUserModel.find(user => user.id === id)?.username
+
+  const [likeCount, setLikeCount] = useState<number>(like)
+  const [isLiked, setIsLiked] = useState<boolean>(false);
+
+  const getUserName = (id:number) => onlineUserModel.find(user => user.id === id)?.username;
+  const handleLike = () => {
+    setLikeCount((prev) => isLiked ? prev - 1 : prev + 1);
+    setIsLiked(!isLiked);
+  };
   
   return (
     <div className='post'>
@@ -42,12 +50,14 @@ const UserPostCard = ({ text, img, date, like, comment, userId }: Props) => {
                     <img 
                         src={Like}
                         alt="like"
+                        onClick={handleLike}
                     />
                     <img 
                         src={Heart}
                         alt="heart"
+                        onClick={handleLike}
                     />
-                    <span>{like} people like it</span>
+                    <span>{likeCount} people like it</span>
                 </div>
                 <div>
                     <span>{comment} comments</span>
